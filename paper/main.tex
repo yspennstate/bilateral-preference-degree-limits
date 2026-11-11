@@ -41,7 +41,7 @@ In the bilateral preference random graph $LK(n,k)$ of La and Kabkab, independent
 
 \section{Introduction}\label{sec:intro}
 
-Let $n\ge3$ and $1\le k\le n-1$. Put independent scores $U_{ij}=U_{ji}$, uniform on $[0,1]$, on the edges of the complete graph $K_n$. Each vertex prefers the $k$ edges at it with the smallest scores, and the graph $LK(n,k)$ keeps an edge if and only if both of its endpoints prefer it. The model is due to La and Kabkab \cite{LK}, who studied its connectivity and diameter. Dabirian and Subramanian \cite{DS} let each vertex prefer its $k$ edges of largest score; the map $U\mapsto1-U$ turns one description into the other, so the two give the same law. Moharrami, Subramanian, Liu and Sundaresan \cite{EWT} study a finite model with independent exponential edge costs in which every vertex is willing to use its $d_i$ cheapest edges; when every $d_i$ equals $k$ this is again $LK(n,k)$, since only the order of the scores matters.
+Let $n\ge3$ and $1\le k\le n-1$. Put independent scores $U_{ij}=U_{ji}$, uniform on $[0,1]$, on the edges of the complete graph $K_n$. Each vertex prefers the $k$ edges at it with the smallest scores, and the graph $LK(n,k)$ keeps an edge if and only if both of its endpoints prefer it. The model is due to La and Kabkab \cite{LK}, who studied its connectivity and diameter. Keeping an edge when at least one endpoint prefers it gives instead the random $k$-th nearest neighbour graph of Cooper and Frieze \cite{CF95}, a weighted form of the random $k$-out graph of Fenner and Frieze \cite{FF82}. Dabirian and Subramanian \cite{DS} let each vertex prefer its $k$ edges of largest score; the map $U\mapsto1-U$ turns one description into the other, so the two give the same law. Moharrami, Subramanian, Liu and Sundaresan \cite{EWT} study a finite model with independent exponential edge costs in which every vertex is willing to use its $d_i$ cheapest edges; when every $d_i$ equals $k$ this is again $LK(n,k)$, since only the order of the scores matters.
 
 Fix a vertex $0$, the root, and let $D=D_{n,k}$ be its degree. The root keeps only edges it prefers, so $D\le k$. Dabirian and Subramanian show that
 \[
@@ -464,12 +464,16 @@ The paper is part of the Math Brain project, whose public repository is \url{htt
 \bibitem{Bil}
 P.~Billingsley, \emph{Probability and Measure}, 3rd ed., Wiley, New York, 1995.
 
+\bibitem{CF95}
+C.~Cooper and A.~Frieze, On the connectivity of random $k$-th nearest neighbour graphs, \emph{Combin. Probab. Comput.} \textbf{4} (1995), 343--362.
 \bibitem{DS}
 H.~Dabirian and V.~Subramanian, Connectivity of a family of bilateral preference random graphs, \emph{J. Appl. Probab.} \textbf{63} (2026), 552--579. Theorems~7 and~8 there are Theorems~6.1 and~6.2 of arXiv:2209.05677v3.
 
 \bibitem{MU21}
 L.~de~Moura and S.~Ullrich, The Lean~4 theorem prover and programming language, in \emph{Automated Deduction -- CADE~28}, Lecture Notes in Comput. Sci. \textbf{12699}, Springer, 2021, 625--635.
 
+\bibitem{FF82}
+T.~I.~Fenner and A.~M.~Frieze, On the connectivity of random $m$-orientable graphs and digraphs, \emph{Combinatorica} \textbf{2} (1982), 347--359.
 \bibitem{LK}
 R.~J.~La and M.~Kabkab, A new random graph model with self-optimizing nodes: connectivity and diameter, \emph{Internet Math.} \textbf{11} (2015), 528--554.
 
