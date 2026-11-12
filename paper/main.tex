@@ -431,7 +431,7 @@ limit & & $1/\sqrt\pi=0.564190$ & $v=0.290688$\\
 \caption{The normalized mean and variance of $H=k-D$ in the interior regime.}\label{tab:interior}
 \end{table}
 
-The file \texttt{RootDegree.lean}, checked with Lean~4 \cite{MU21} and Mathlib \cite{Mathlib20}, proves the identity $\binom{n-3}{k-1}B(k,n-k-1)=1/(n-2)$ used in Lemma~\ref{lem:cov}, the identity $k\binom{2k}k4^{-k}=(2k-1)\binom{2k-2}{k-1}2^{1-2k}$ behind Corollary~\ref{cor:ck} for every $k\ge1$, the agreement of \eqref{eq:musum} with $r\binom{2r}r4^{-r}$ for $r\le6$, and the values of $M_{2,r}$, $\nu_r$ and $\mu_r^2/\nu_r$ for $r=1,2$.
+The file \texttt{RootDegree.lean}, checked with Lean~4 \cite{MU21} and Mathlib \cite{Mathlib20}, proves the identity $\binom{a+b}a\,a!\,b!/(a+b+1)!=1/(a+b+1)$ for all integers $a,b\ge0$, which for $a=k-1$ and $b=n-k-2$ is the identity $\binom{n-3}{k-1}B(k,n-k-1)=1/(n-2)$ used in Lemma~\ref{lem:cov}, the identity $k\binom{2k}k4^{-k}=(2k-1)\binom{2k-2}{k-1}2^{1-2k}$ behind Corollary~\ref{cor:ck} for every $k\ge1$, the agreement of \eqref{eq:musum} with $r\binom{2r}r4^{-r}$ for $r\le6$, and the values of $M_{2,r}$, $\nu_r$ and $\mu_r^2/\nu_r$ for $r=1,2$.
 
 \section*{Acknowledgements and funding}
 The research presented in this paper was supported by the European Research
@@ -452,7 +452,7 @@ has a management role at Convex Nexus Capital. These entities are included
 in the funding declaration above.
 
 \section*{Declaration of generative AI and AI-assisted technologies}
-The paper comes out of Math Brain, an ongoing project on the use of AI systems for research mathematics. Between 17 and 19 September 2026 agents running in OpenAI's Codex (GPT-5.6 Sol) obtained the results of Sections~\ref{sec:interior} to~\ref{sec:dual}, and other Codex agents checked them. On 14 October 2026 Claude Opus~5.5 (Anthropic), working in Claude Code, checked the proofs line by line, wrote out in full the uniform integrability in Lemma~\ref{lem:condmean} and the proofs of Theorem~\ref{thm:fixedr} and Proposition~\ref{prop:fixedk}, and wrote the computer checks, the Lean file and the paper in its present form. The author directed the work and is responsible for the content of the paper and for decisions concerning its dissemination.
+The paper comes out of Math Brain, an ongoing project on the use of AI systems for research mathematics. Between 17 and 19 September 2026 agents running in OpenAI's Codex (GPT-5.6 Sol) obtained the results of Sections~\ref{sec:interior} to~\ref{sec:dual}, and other Codex agents checked them. On 14 October 2026 Claude Opus~5.5 (Anthropic), working in Claude Code, checked the proofs line by line, wrote out in full the uniform integrability in Lemma~\ref{lem:condmean} and the proofs of Theorem~\ref{thm:fixedr} and Proposition~\ref{prop:fixedk}, and wrote the computer checks, the Lean file and the paper in its present form. In November 2026 a Codex agent (OpenAI, GPT-6.1) refereed the manuscript, checking every lemma and the numerical claims with its own programs. The author directed the work and is responsible for the content of the paper and for decisions concerning its dissemination.
 
 \section*{Data availability}
 No data were used. The code and the Lean file are available at\\ \url{https://github.com/yspennstate/bilateral-preference-degree-limits}.
